@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="icon" href="img/millipiyangologo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>2023 Milli Piyango</title>
+  </head>
+  <body>
+    
+
+
+    <h2><b>2023 Milli Piyango Çekiliş Ekranı</b></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 p-3">
+       <b>Biletinizi Seçiniz:</b> 
+      </div>
+
+      <div class="col-sm-9">
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox1" name="listbox1" onchange="getSelectedValue();">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox2" name="listbox2" onchange="getSelectedValue2();">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox3" name="listbox3" onchange="getSelectedValue3();">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox4" name="listbox4" onchange="getSelectedValue4();">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox5" name="listbox5" onchange="getSelectedValue5();">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox6" name="listbox6" onchange="getSelectedValue6();"> 
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+        <div class="newbutton ">
+          <select class="listbox" id="listbox7" name="listbox7" onchange="getSelectedValue7();">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="cekilisekranı background">
+    <div class="buttons">
+      <div>
+        <div>
+          <button id="cekilis" class="cekilisyap" type="button">Çekiliş Yap</button>
+          <button id="cekilisgoster" class="cekilisyap" type="button">Çekiliş Sonucu</button>
+          <button id="cekilissifirla" class="cekilisyap" type="button">Çekilişi Sıfırla</button>
+        </div>
+      <div id="sayi1" class="button"></div>
+      <div id="sayi2" class="button"></div>
+      <div id="sayi3" class="button"></div>
+      <div id="sayi4" class="button"></div>
+      <div id="sayi5" class="button"></div>
+      <div id="sayi6" class="button"></div>
+      <div id="sayi7" class="button"></div>
+      
+    </div>
+  </div>
+
+    
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
