@@ -62,7 +62,14 @@ var toplam = 0;
 
 var btncekilis=document.getElementById("cekilis");
 btncekilis.onclick=function(){
-
+        var newlistbox1 = Number(document.getElementById("listbox1").value);
+        var newlistbox2 = Number(document.getElementById("listbox2").value);
+        var newlistbox3 = Number(document.getElementById("listbox3").value);
+        var newlistbox4 = Number(document.getElementById("listbox4").value);
+        var newlistbox5 = Number(document.getElementById("listbox5").value);
+        var newlistbox6 = Number(document.getElementById("listbox6").value);
+        var newlistbox7 = Number(document.getElementById("listbox7").value);
+	
         uret1 = Math.floor(Math.random() * 10);
         uret2 = Math.floor(Math.random() * 10);
         uret3 = Math.floor(Math.random() * 10);
